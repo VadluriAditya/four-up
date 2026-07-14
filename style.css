@@ -1,0 +1,20 @@
+html, body { margin: 0; min-height: 100%; background: #0d0e12; color: #ece7e1; font-family: -apple-system, system-ui, sans-serif; }
+#app { max-width: 480px; margin: 0 auto; padding: 24px 16px 60px; text-align: center; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: #5b9dd8; font-weight: 700; }
+h1 { font-size: 30px; margin: 6px 0 2px; }
+.sub { color: #9a9199; font-size: 14px; margin-bottom: 14px; }
+
+.levels { display: flex; gap: 8px; justify-content: center; margin-bottom: 16px; }
+.level-btn { background: #16151b; border: 1px solid #2a2831; color: #ece7e1; border-radius: 8px; padding: 8px 14px; cursor: pointer; font-weight: 600; font-size: 13px; }
+.level-btn.active { border-color: #5b9dd8; color: #5b9dd8; }
+
+.board { display: inline-grid; grid-template-columns: repeat(7, 1fr); gap: 6px; background: #16151b; border-radius: 12px; padding: 10px; }
+.col { display: contents; }
+.cell { width: 42px; height: 42px; border-radius: 50%; background: #221f28; cursor: pointer; }
+.cell.p1 { background: #d84a5b; }
+.cell.p2 { background: #d8b34a; }
+.cell.win { box-shadow: 0 0 0 3px #5bc0a8 inset; }
+
+.status { margin-top: 14px; font-weight: 700; }
+.overlay { margin-top: 14px; background: #16151b; border: 1px solid #2a2831; border-radius: 12px; padding: 16px; }
+.btn { background: #5b9dd8; color: #0d0e12; border: none; border-radius: 10px; padding: 12px 24px; font-weight: 700; cursor: pointer; margin-top: 10px; }
